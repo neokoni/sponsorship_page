@@ -1,0 +1,34 @@
+.body {
+    background-color: rgb(247, 251, 255);
+    line-height: 3px;
+}
+
+.font {
+    color:rgb(41, 158, 253);
+    text-align: center;
+}
+
+.domainlist {
+    height: 12px; 
+    width: 90px; 
+    background-color: rgb(120, 192, 240);  
+    margin: 0 auto;
+    display: initial;
+    border-radius: 3px;
+}
+.domain {
+    color: rgb(137, 255, 126);
+}
+
+.QRcode {
+
+}
+
+.footline{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: rgb(155, 155, 155);
+}
