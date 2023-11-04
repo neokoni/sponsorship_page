@@ -1,8 +1,7 @@
 .body {
     background-color: #f7fbff;
-    line-height: 5px;
+    line-height: 8px;
     font-family: OPPOSans;
-    font-size: auto;
 }
 
 @font-face {
@@ -42,11 +41,12 @@
     height: auto;
 }
 
-.footline{
+.footnote{
     position: fixed;
     bottom: 0px;
     text-align: center;
     left: 0;
     right: 0;
     color: rgb(155, 155, 155);
+    font-size: 50%;
 }
