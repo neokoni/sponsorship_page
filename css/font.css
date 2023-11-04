@@ -21,6 +21,11 @@
 }
 
 .QRcode {
+    align-items: center;
+    margin: 0 auto;
+    width: 426px;
+    height: auto;
+
 
 }
 
