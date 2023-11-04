@@ -1,6 +1,6 @@
 .body {
-    background-color: rgb(247, 251, 255);
-    line-height: 3px;
+    background-color: #f7fbff;
+    line-height: 4px;
 }
 
 .font {
@@ -11,11 +11,12 @@
 .domainlist {
     height: 12px; 
     width: 90px; 
-    background-color: rgb(120, 192, 240);  
+    background-color: #78c0f0;  
     margin: 0 auto;
     display: initial;
     border-radius: 3px;
 }
+
 .domain {
     color: rgb(137, 255, 126);
 }
@@ -25,8 +26,13 @@
     margin: 0 auto;
     width: 426px;
     height: auto;
+}
 
-
+.qqcode{
+    align-items: center;
+    margin: 0 auto;
+    width: 213px;
+    height: auto;
 }
 
 .footline{
