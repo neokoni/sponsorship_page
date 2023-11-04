@@ -50,3 +50,10 @@
     color: rgb(155, 155, 155);
     font-size: 50%;
 }
+
+.footnotehr {
+    width: 400px;
+    border: none;
+    background-color: #c9c9c9;
+    height: 2px;
+}
