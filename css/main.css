@@ -1,6 +1,13 @@
 .body {
     background-color: #f7fbff;
-    line-height: 4px;
+    line-height: 5px;
+    font-family: OPPOSans;
+    font-size: auto;
+}
+
+@font-face {
+    font-family: OPPOSans ;
+    src: url("../font/OPPOSans-Medium.ttf");
 }
 
 .font {
