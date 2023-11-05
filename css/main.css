@@ -27,14 +27,14 @@
     color: rgb(137, 255, 126);
 }
 
-.QRcode {
+.QRcode1 {
     align-items: center;
     margin: 0 auto;
     width: 426px;
     height: auto;
 }
 
-.qqcode{
+.QRcode2{
     align-items: center;
     margin: 0 auto;
     width: 213px;
