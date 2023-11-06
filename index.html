@@ -3,7 +3,7 @@
 <head>
     <!-- meta -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <meta property="og:title" content="Donate me" />
     <meta property="og:url" content="https://donate.neokoni.moe" />
     <meta property="og:image" content="./icon.png" />
@@ -28,14 +28,21 @@
             </div>
         </p>
         <p>Scan the QR code to pay me</p>
+        <p>AliPay QR-code could click to pay</p>
     </div>
     <div class="QRcode">
         <div class="QRcode1">
-            <img src="./img/ali.png" alt="" width="200px" >
-            <img src="./img/wechat.png" alt="" width="200px">
+            <div></div>
+            <!-- AliPay QR-code -->
+            <a href="https://qr.alipay.com/fkx13314yyiwvqakof9tle5">
+                <img src="./img/ali.png" alt="AliPay" width="200px" >
+            </a>
+            <!-- WechatPay QR-code -->
+            <img src="./img/wechat.png" alt="WeChat Pay" width="200px" >
         </div>
         <div class="QRcode2">
-            <img id="qq" src="./img/qq.png" alt="" width="200px">
+            <!-- QQPay QR-code -->
+            <img id="qq" src="./img/qq.png" alt="QQPay" width="200px">
         </div>
         <div class="footnote">
             <hr class="footnotehr">
