@@ -34,6 +34,10 @@
     height: auto;
 }
 
+a.alipay {
+    color: rgba(255, 255, 255, 0);
+}
+
 .QRcode2{
     align-items: center;
     margin: 0 auto;
