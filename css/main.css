@@ -61,3 +61,22 @@ a.alipay {
     background-color: #c9c9c9;
     height: 2px;
 }
+
+.qq{
+    transition-duration: 0.4s;
+}
+
+.qq:hover{
+    transform:scale(1.3) ;
+    background-color: #FBFBFF;
+    margin-top: -200px;
+}
+
+.wechat{
+    transition-duration: 0.4s;
+}
+.wechat:hover{
+    transform:scale(1.5) ;
+    background-color: #FBFBFF;
+    margin-left: -100px;
+}
