@@ -55,7 +55,7 @@
                         top-40 right-48 hover:shadow-xl
                         border border-[rgba(145,145,145,1)] rounded-full
                         hover:bg-[rgba(59,59,59,0.2)] transition ease-in-out duration-500" @click="closeQRcode()">
-            <img src="../assets/icons/x.svg" alt="" class="m-auto pt-2 fill-white">
+            <img src="/icons/x.svg" alt="" class="m-auto pt-2 fill-white">
         </div>
     </div>
 </template>
@@ -109,7 +109,7 @@ export default defineComponent({
             // 判定选择的方式
             if (payPlatform == "alipay") {
                 // 设置支付宝收款码
-                qrcode?.setAttribute("src", "src/assets/qrcodes/alipay.png");
+                qrcode?.setAttribute("src", "/qrcodes/alipay.png");
                 // 设置显示的支付方式名称
                 if (payTypeTitle) { payTypeTitle.textContent = "支付宝"; }
                 // 对其显示跳转按钮
@@ -119,13 +119,13 @@ export default defineComponent({
             }
             if (payPlatform == "wechat") {
                 // 设置微信收款码
-                qrcode?.setAttribute("src", "src/assets/qrcodes/wechat.png");
+                qrcode?.setAttribute("src", "/qrcodes/wechat.png");
                 // 设置显示的支付方式名称
                 if (payTypeTitle) { payTypeTitle.textContent = "微信"; }
             }
             if (payPlatform == "qq") {
                 // 设置QQ收款码
-                qrcode?.setAttribute("src", "src/assets/qrcodes/qq.png");
+                qrcode?.setAttribute("src", "/qrcodes/qq.png");
                 // 设置显示的支付方式名称
                 if (payTypeTitle) { payTypeTitle.textContent = "QQ"; }
             }
