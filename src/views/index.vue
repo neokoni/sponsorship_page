@@ -95,9 +95,10 @@ export default defineComponent({
             const payTypeTitle = document.getElementById("payTypeTitle")
             // 还原到初始值
             qrcode?.setAttribute("src", "");
-            payTypeTitle.textContent = "";
+            if (payTypeTitle) { payTypeTitle.textContent = ""; }
             qrcodePage?.classList.add("hidden");
-            document.getElementById("openApp").classList.add("hidden");
+            const openAPP = document.getElementById("openApp");
+            if (openAPP) { openAPP.classList.add("hidden"); }
         },
         openQRcode(payPlatform: string) {
             // 获取元素
@@ -110,9 +111,9 @@ export default defineComponent({
                 // 设置支付宝收款码
                 qrcode?.setAttribute("src", "src/assets/qrcodes/alipay.png");
                 // 设置显示的支付方式名称
-                payTypeTitle.textContent = "支付宝";
+                if (payTypeTitle) { payTypeTitle.textContent = "支付宝"; }
                 // 对其显示跳转按钮
-                document.getElementById("openApp").classList.remove("hidden");
+                if (openApp) { openApp.classList.remove("hidden"); }
                 // 跳转的链接
                 openApp?.setAttribute("href", "https://qr.alipay.com/fkx14150lufylbxvwp40u0a");
             }
@@ -120,13 +121,13 @@ export default defineComponent({
                 // 设置微信收款码
                 qrcode?.setAttribute("src", "src/assets/qrcodes/wechat.png");
                 // 设置显示的支付方式名称
-                payTypeTitle.textContent = "微信";
+                if (payTypeTitle) { payTypeTitle.textContent = "微信"; }
             }
             if (payPlatform == "qq") {
                 // 设置QQ收款码
                 qrcode?.setAttribute("src", "src/assets/qrcodes/qq.png");
                 // 设置显示的支付方式名称
-                payTypeTitle.textContent = "QQ";
+                if (payTypeTitle) { payTypeTitle.textContent = "QQ"; }
             }
             // 让显示
             qrcodePage?.classList.remove("hidden");
