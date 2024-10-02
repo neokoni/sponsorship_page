@@ -3,7 +3,7 @@
     <div class="
         h-[400px] w-[900px] bg-[rgba(143,143,143,0.5)] backdrop-blur-xl 
         border-[rgba(181,181,181,1)] border rounded-[60px]
-        m-auto absolute top-0 left-0 right-0 bottom-0 bg-no-repeat
+        m-auto absolute top-0 left-0 right-0 bottom-0
         pt-[50px] pl-[50px] pr-[50px] pb-[50px]
         flex items-center justify-between
         text-[rgba(227,227,227,1)] text-base
@@ -28,11 +28,12 @@
     </div>
     <!-- 覆盖部分 -->
     <div class="absolute left-0 top-0 bg-[rgb(143,143,143,0.5)] 
-                h-screen w-screen transition ease-in-out duration-500
+                h-screen w-screen 
                 text-base text-[rgba(196,196,196,1)]
                 backdrop-blur-2xl hidden" id="qrcodepage">
-        <div class="">
-            <p class=" text-center pt-60">请使用<span id="payTypeTitle"></span>扫描二维码</p>
+        <!-- 使二维码部分居中 -->
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <p class=" text-center ">请使用<span id="payTypeTitle"></span>扫描二维码</p>
             <!-- 二维码主体部分 -->
             <div class="h-[280px] w-[280px] bg-[rgba(107,107,107,0.3)]
                         border border-[rgba(145,145,145,1)] rounded-2xl
@@ -52,7 +53,7 @@
         </div>
         <!-- 关闭按钮处 -->
         <div class="w-10 h-10 bg-[rgba(107,107,107,0.2)] absolute 
-                        top-40 right-48 hover:shadow-xl
+                        top-40 right-48 hover:shadow-xl 
                         border border-[rgba(145,145,145,1)] rounded-full
                         hover:bg-[rgba(59,59,59,0.2)] transition ease-in-out duration-500" @click="closeQRcode()">
             <img src="/icons/x.svg" alt="" class="m-auto pt-2 fill-white">
