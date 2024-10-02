@@ -4,9 +4,10 @@
 @tailwind utilities;
 
 body{
-  background: url("/bg_OneShotLibraryStroll.png");
+  background: url("/bg_OneShotLibraryStroll.png") fixed;
   display: absolute;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
