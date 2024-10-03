@@ -1,7 +1,7 @@
 <template>
     <!-- 主体方框部分 -->
     <div class="
-        h-[400px] w-[900px] bg-[rgba(143,143,143,0.5)] backdrop-blur-xl 
+        h-[400px] w-[900px] bg-[rgba(82,76,76,0.5)] backdrop-blur-xl 
         border-[rgba(181,181,181,1)] border rounded-[60px]
         m-auto absolute top-0 left-0 right-0 bottom-0
         pt-[50px] pl-[50px] pr-[50px] pb-[50px]
@@ -17,8 +17,8 @@
         <div class="ml-6 w-[300px] h-full text-center">请选择支付方式
             <!-- 使用v-for循环进行生成，在const payWay那里 -->
             <div v-for="i in payWay">
-                <button class="border h-16 w-48 mt-4 rounded-[67px] border-[#C7BBBB] bg-[rgba(191,187,187,0.3)]
-                     hover:bg-[rgba(197,197,197,0.71)] hover:text-white hover:shadow-xl
+                <button class="border h-16 w-48 mt-4 rounded-[67px] border-[#C7BBBB] bg-[rgba(143,135,135,0.28)]
+                     hover:bg-[rgba(151,147,147,0.71)] hover:text-white hover:shadow-xl
                       transition ease-in-out duration-500" @click="openQRcode(i.type)">
                     <img :src="i.logo" alt="">
                     <p v-text="i.name"></p>
@@ -27,7 +27,7 @@
         </div>
     </div>
     <!-- 覆盖部分 -->
-    <div class="absolute left-0 top-0 bg-[rgb(143,143,143,0.5)] 
+    <div class="absolute left-0 top-0 bg-[rgba(41,41,41,0.5)] 
                 h-screen w-screen 
                 text-base text-[rgba(196,196,196,1)]
                 backdrop-blur-2xl hidden" id="qrcodepage">
@@ -35,7 +35,7 @@
         <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <p class=" text-center ">请使用<span id="payTypeTitle"></span>扫描二维码</p>
             <!-- 二维码主体部分 -->
-            <div class="h-[280px] w-[280px] bg-[rgba(107,107,107,0.3)]
+            <div class="h-[280px] w-[280px] bg-[rgba(90,88,88,0.17)]
                         border border-[rgba(145,145,145,1)] rounded-2xl
                         m-auto mt-10
                         pt-[10px] pl-[10px] pr-[10px] pb-[10px]">
@@ -43,10 +43,10 @@
             </div>
             <!-- 跳转按钮部分 -->
             <a id="openApp" class="hidden" target="_blank">
-                <button class=" m-auto w-[250px] h-[70px] bg-[rgba(107,107,107,0.2)]
+                <button class=" m-auto w-[250px] h-[70px] bg-[rgba(90,88,88,0.17)]
                                     border border-[rgba(145,145,145,1)] rounded-full
                                     mt-10 text-center block 
-                                    hover:bg-[rgba(197,197,197,0.71)] hover:text-white hover:shadow-xl
+                                    hover:bg-[rgba(187,187,187,0.71)] hover:text-white hover:shadow-xl
                                     transition ease-in-out duration-500 
                                     ">或直接跳转支付宝?</button>
             </a>
@@ -55,7 +55,7 @@
         <div class="w-10 h-10 bg-[rgba(107,107,107,0.2)] absolute 
                         top-40 right-48 hover:shadow-xl 
                         border border-[rgba(145,145,145,1)] rounded-full
-                        hover:bg-[rgba(59,59,59,0.2)] transition ease-in-out duration-500" @click="closeQRcode()">
+                        hover:bg-[rgba(59,59,59,0.2)] transition ease-in-out" @click="closeQRcode()">
             <img src="/icons/x.svg" alt="" class="m-auto pt-2 fill-white">
         </div>
     </div>
