@@ -36,7 +36,7 @@
                 lg:text-base text-[rgba(196,196,196,1)]
                 backdrop-blur-2xl hidden" id="qrcodepage">
         <!-- 使二维码部分居中 -->
-        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div class="absolute left-1/2 lg:top-1/2 top-[45%] -translate-x-1/2 -translate-y-1/2">
             <p class=" text-center ">请使用<span id="payTypeTitle"></span>扫描二维码</p>
             <!-- 二维码主体部分 -->
             <div class="lg:h-[280px] lg:w-[280px] bg-[rgba(90,88,88,0.17)]
@@ -62,7 +62,7 @@
                         lg:top-40 lg:right-48 lg:left-auto hover:shadow-xl 
                         border border-[rgba(145,145,145,1)] rounded-full
                         hover:bg-[rgba(59,59,59,0.2)] transition ease-in-out
-                        left-1/2 top-[85%] -translate-x-1/2 -translate-y-1/2" @click="closeQRcode()">
+                        left-1/2 top-[15%] -translate-x-1/2 -translate-y-1/2" @click="closeQRcode()">
             <img src="/icons/x.svg" alt="" class="m-auto pt-2 fill-white">
         </div>
     </div>
