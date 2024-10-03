@@ -2,14 +2,14 @@
     <!-- 主体方框部分 -->
     <div class="
         lg:h-[400px] lg:w-[900px] bg-[rgba(82,76,76,0.5)] backdrop-blur-xl 
-        border-[rgba(181,181,181,1)] border rounded-[60px]
+        border-[rgba(181,181,181,1)] border lg:rounded-[60px]
         m-auto absolute top-0 left-0 right-0 bottom-0
         pt-[50px] pl-[50px] pr-[50px] pb-[50px]
         lg:flex items-center lg:justify-between
         text-[rgba(227,227,227,1)] text-base
         shadow-2xl
 
-        w-4/5 h-5/6
+        w-4/5 h-5/6 rounded-[30px]
         ">
         <div class=" max-w-[350px] lg:h-full h-[38%]">
             <p class="text-3xl ">赞助(打钱)</p>
