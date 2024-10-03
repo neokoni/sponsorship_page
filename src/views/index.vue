@@ -9,8 +9,8 @@
         text-[rgba(227,227,227,1)] text-base
         shadow-2xl">
         <div class=" max-w-[350px] h-full">
-            <p class="text-3xl ">捐赠(打钱)</p>
-            <p class=" pt-3">感谢你的捐赠或向我付款，请选择你喜欢的支付渠道以展开支付，点击以展开详情</p>
+            <p class="text-3xl ">赞助(打钱)</p>
+            <p class=" pt-3">感谢你的赞助或向我付款，请选择你喜欢的支付渠道以展开支付，点击以展开详情</p>
         </div>
         <!-- 中间分隔线 -->
         <div class="ml-6 h-64 block border border-[rgba(153,151,151,1)] bg-[rgba(153,151,151,1)]"></div>
