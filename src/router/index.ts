@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     // {
     //   path: '/',
@@ -9,7 +9,7 @@ const router = createRouter({
     //   component: HomeView
     // },
      {
-       path: './',
+       path: '/',
        name: 'index',
        // route level code-splitting
        // this generates a separate chunk (About.[hash].js) for this route
