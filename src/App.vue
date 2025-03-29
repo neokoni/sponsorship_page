@@ -2,7 +2,7 @@
   <!-- 主体方框部分 -->
   <div class="
         lg:h-[400px] lg:w-[900px] bg-[rgba(82,76,76,0.5)] backdrop-blur-xl 
-        border-[rgba(181,181,181,1)] border lg:rounded-[60px]
+        border-[rgba(181,181,181,1)] border lg:rounded-[20px]
         m-auto absolute top-0 left-0 right-0 bottom-0
         pt-[50px] pl-[50px] pr-[50px] pb-[50px]
         lg:flex items-center lg:justify-between
@@ -12,15 +12,15 @@
         w-4/5 h-5/6 rounded-[30px]
         ">
         <div class=" max-w-[350px] lg:h-full h-[38%]">
-            <p class="text-3xl ">赞助(打钱)</p>
-            <p class=" pt-3">感谢你的赞助或向我付款，请选择你喜欢的支付渠道以展开支付，点击以展开详情</p>
+            <p class="text-3xl ">打钱</p>
+            <p class=" pt-3">感谢你的赞助或向我付款(打钱)，请选择你喜欢的支付渠道以展开支付二维码，点击以展开详情</p>
         </div>
         <!-- 中间分隔线 -->
         <div class="lg:ml-6 lg:h-64 block border border-[rgba(153,151,151,1)] bg-[rgba(153,151,151,1)]"></div>
         <div class="lg:ml-6 lg:w-[300px]  text-center pt-4">请选择支付方式
             <!-- 使用v-for循环进行生成，在const payWay那里 -->
             <div v-for="i in payWay">
-                <button class="border lg:h-16 lg:w-48 mt-4 rounded-[67px] border-[#C7BBBB] bg-[rgba(143,135,135,0.28)]
+                <button class="border lg:h-16 lg:w-48 mt-4 rounded-[12px] border-[#C7BBBB] bg-[rgba(143,135,135,0.28)]
                      hover:bg-[rgba(151,147,147,0.71)] hover:text-white hover:shadow-xl
                       transition ease-in-out duration-500
                       h-14 w-40" @click="openQRcode(i.type)">
