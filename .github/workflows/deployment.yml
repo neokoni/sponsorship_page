@@ -35,7 +35,7 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           source: dist/*
-          target: /opt/1panel/apps/openresty/openresty/www/sites/dq.neokoni.ink/index/
+          target: /opt/1panel/www/sites/dq.neokoni.ink/index/
           rm: true
           strip_components: 1
           
