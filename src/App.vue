@@ -39,8 +39,8 @@
         <div class="absolute left-1/2 lg:top-1/2 top-[45%] -translate-x-1/2 -translate-y-1/2">
             <p class=" text-center ">请使用<span id="payTypeTitle"></span>扫描二维码</p>
             <!-- 二维码主体部分 -->
-            <div class="lg:h-[280px] lg:w-[280px] bg-[rgba(90,88,88,0.17)]
-                        border border-[rgba(145,145,145,1)] rounded-2xl
+            <div id="qrcodeBg" class="lg:h-[280px] lg:w-[280px] bg-[rgba(90,88,88,0.17)]
+                        border border-[rgba(145,145,145,1)]
                         m-auto mt-10
                         pt-[10px] pl-[10px] pr-[10px] pb-[10px]
                         h-[200px] w-[200px]">
@@ -107,6 +107,11 @@ export default defineComponent({
             qrcodePage?.classList.add("hidden");
             const openAPP = document.getElementById("openApp");
             if (openAPP) { openAPP.classList.add("hidden"); }
+            const qrcodeBgClassList = document.getElementById("qrcodeBg")?.classList;
+            if (qrcodeBgClassList) {
+                qrcodeBgClassList.remove("rounded-2xl");
+                qrcodeBgClassList.remove("rounded-full");
+            }
         },
         openQRcode(payPlatform: string) {
             // 获取元素
@@ -114,8 +119,11 @@ export default defineComponent({
             const qrcode = document.getElementById("qrcode");
             const payTypeTitle = document.getElementById("payTypeTitle")
             const openApp = document.getElementById("openApp");
+            const qrcodeBgClassList = document.getElementById("qrcodeBg")?.classList;
             // 判定选择的方式
             if (payPlatform == "alipay") {
+                // 设置二维码背景的圆角
+                qrcodeBgClassList?.add("rounded-2xl");
                 // 设置支付宝收款码
                 qrcode?.setAttribute("src", "/qrcodes/alipay.png");
                 // 设置显示的支付方式名称
@@ -126,12 +134,16 @@ export default defineComponent({
                 openApp?.setAttribute("href", "https://qr.alipay.com/fkx14150lufylbxvwp40u0a");
             }
             if (payPlatform == "wechat") {
+                // 设置二维码背景的圆角
+                qrcodeBgClassList?.add("rounded-full");
                 // 设置微信收款码
                 qrcode?.setAttribute("src", "/qrcodes/wechat.png");
                 // 设置显示的支付方式名称
                 if (payTypeTitle) { payTypeTitle.textContent = "微信"; }
             }
             if (payPlatform == "qq") {
+                // 设置二维码背景的圆角
+                qrcodeBgClassList?.add("rounded-2xl");
                 // 设置QQ收款码
                 qrcode?.setAttribute("src", "/qrcodes/qq.png");
                 // 设置显示的支付方式名称
