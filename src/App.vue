@@ -1,7 +1,7 @@
 <template>
   <!-- 主体方框部分 -->
   <div class="
-        lg:h-[400px] lg:w-[900px] bg-[rgba(82,76,76,0.5)] backdrop-blur-xl 
+        lg:h-[400px] lg:w-[900px] bg-[rgba(63,59,59,0.5)] backdrop-blur-xl 
         border-[rgba(181,181,181,1)] border lg:rounded-xl
         m-auto absolute top-0 left-0 right-0 bottom-0
         pt-[50px] pl-[50px] pr-[50px] pb-[50px]

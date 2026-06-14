@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body{
-  background: url("/bg_OneShotLibraryStroll.png") fixed;
+  background: url("https://www.neokoni.ink/background.jpg") fixed;
   display: absolute;
   background-size: cover;
   background-repeat: no-repeat;
