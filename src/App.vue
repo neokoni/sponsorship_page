@@ -71,6 +71,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
+var isEscEventRegistered = false;
+
 export default defineComponent({
     data() {
         return {
@@ -151,6 +153,16 @@ export default defineComponent({
             }
             // 让显示
             qrcodePage?.classList.remove("hidden");
+
+            if (!isEscEventRegistered) {
+                // 注册ESC键事件监听器
+                document.addEventListener("keydown", (event) => {
+                    if (event.key === "Escape") {
+                        this.closeQRcode();
+                    }
+                });
+                isEscEventRegistered = true;
+            }
         },
 
     }
